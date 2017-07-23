@@ -15,8 +15,7 @@ const fixtures = {
       userId: uuid.uuid(),
       publicId: uuid.encode(id),
       id: id,
-      createdAt: new Date().toString(),
-      src: `${uuid.v4()}.jpg`
+      createdAt: new Date().toString()
     }
   },
 
