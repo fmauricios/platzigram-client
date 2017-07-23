@@ -50,13 +50,13 @@ test('savePicture', async t => {
   let token = 'xxx-xxx-xxx'
   let image = fixtures.getImage()
   let newImage = {
-    src: image.src,
+    url: image.url,
     description: image.description
   }
 
   nock(options.endpoints.pictures, {
     reqheaders: {
-      'Authentication': `Bearer ${token}`
+      'Authorization': `Bearer ${token}`
     }
   })
     .post('/', newImage)
